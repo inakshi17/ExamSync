@@ -82,16 +82,8 @@ File Handling
 - C++ - OOP and core system
 - Git & GitHub - Version Control
 
+
 ## Team
-Team Name: Code Quartet
-Team ID: DSCPP-III-2026-T079
-Shreeya Sharma - Team Lead
-Saumya Jha
-Inakshi Bahukhandi
-Rincy
-
-## Expected Outcome
-
 - Team Name: Code Quartet
 - Team ID: DSCPP-III-2026-T079
 
