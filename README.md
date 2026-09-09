@@ -1,6 +1,6 @@
 # ExamSync -- Smart Examination Coordination Portal
 
-## 📌 About
+##  About
 
 ExamSync is a C/C++ based examination system which automates the exam seating arrangement and facilitates examination coordination through the use of Data Structures & Algorithms (DSA) and Object Oriented Programming (OOP) to design a smart and automated system of examination hall seating arrangement.
 
@@ -61,5 +61,5 @@ ExamSync is a C/C++ based examination system which automates the exam seating ar
 - **Inakshi Bahukhandi**
 - **Rincy**
 
-## 🎯 Expected Outcome
+##  Expected Outcome
 ExamSync aims to make the process of examination management faster, organized and free from errors by providing automated seating arrangement and centralized examination information management.
