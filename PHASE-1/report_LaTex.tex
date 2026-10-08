@@ -1,0 +1,421 @@
+% Exact LaTeX recreation of the supplied Phase-1.pdf
+% Compile with pdfLaTeX. Place member pictures in the same folder if required.
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,left=2.0cm,right=2.0cm,top=1.55cm,bottom=1.55cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{setspace}
+
+% -------------------------------------------------
+% COLOURS
+% -------------------------------------------------
+\definecolor{TitleBlue}{RGB}{61,103,154}
+
+% -------------------------------------------------
+% GENERAL SETTINGS
+% -------------------------------------------------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\renewcommand{\arraystretch}{1.0}
+
+% The supplied document uses a clean sans-serif heading style
+% and italic serif-style explanatory text.
+\newcommand{\blueheading}[1]{%
+    {\sffamily\color{TitleBlue}\fontsize{15}{18}\selectfont #1}%
+}
+
+\newcommand{\bluebigheading}[1]{%
+    {\sffamily\bfseries\color{TitleBlue}\fontsize{16}{19}\selectfont #1}%
+}
+
+\newcommand{\instruction}[1]{%
+    {\itshape\fontsize{10.5}{12.5}\selectfont #1}%
+}
+
+\newcommand{\answerbox}[2][3.0cm]{%
+    \vspace{2pt}
+    \noindent
+    \fbox{%
+        \begin{minipage}[t][#1][t]{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+            \vspace{1mm}
+            \itshape #2
+        \end{minipage}
+    }
+}
+
+% -------------------------------------------------
+% HEADER / FOOTER
+% -------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancyhead[L]{%
+    \sffamily\bfseries\itshape\fontsize{10.5}{12}\selectfont
+    COURSE NAME AND ID : DSCPP-III-2026-T079
+}
+\fancyhead[R]{%
+    \raisebox{-0.2\height}{\includegraphics[width=2.2cm,height=1.2cm,keepaspectratio]{graphicera_logo.png}}%
+}
+\fancyfoot[R]{%
+    \itshape\fontsize{10}{12}\selectfont
+    Page \thepage
+}
+\setlength{\headheight}{28pt} 
+\setlength{\headsep}{18pt}
+\setlength{\footskip}{24pt}
+
+
+\begin{document}
+
+\vspace*{4mm}
+
+\bluebigheading{PROJECT AND TEAM INFORMATION}
+
+\vspace{13mm}
+
+\blueheading{Project Title}
+
+\vspace{1mm}
+
+\answerbox[1.0cm]{ExamSync – Smart Examination Coordination Portal}
+
+\vspace{13mm}
+
+\blueheading{Student / Team Information}
+
+\vspace{2mm}
+
+\noindent
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{0.59\textwidth}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\begin{minipage}[t]{\linewidth}
+\vspace{1.5mm}
+\textit{Team Name:}\\[-1mm]
+\textit{Team Id : }\\[-1mm]
+\vspace{2mm}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\vspace{1.5mm}
+\textit{Code Quartet}\\[-1mm]
+\textit{DSCPP-III-2026-T079 }\\[-1mm]
+\vspace{2mm}
+\end{minipage}
+\\
+\hline
+\begin{minipage}[t][3.5cm][t]{\linewidth}
+\vspace{1.5mm}
+\textbf{Team member 1 (Team Lead)}\\[-1mm]
+\textit{(Last Name, Name, Student ID, Email): }
+\vspace{2.0cm}
+\end{minipage}
+&
+\begin{minipage}[t][3.25cm][t]{\linewidth}
+\vspace{1.5mm}
+\textit{Sharma, Shreeya - 2510011488}\\
+\textit{shreeyasharma033@gmail.com}
+
+\vspace{2mm}
+\includegraphics[width=4.0cm,height=2cm,keepaspectratio]{shreeya.png}
+\end{minipage}
+\\
+\hline
+\begin{minipage}[t][3.5cm][t]{\linewidth}
+\vspace{1.5mm}
+\textbf{Team member 2}\\[-1mm]
+\textit{(Last Name, Name, Student ID, Email):}
+\vspace{2.0cm}
+\end{minipage}
+&
+\begin{minipage}[t][3.25cm][t]{\linewidth}
+\vspace{1.5mm}
+\textit{Bahukhandi, Inakshi - 2512520002}\\
+\textit{inakshi.8734@gmail.com}
+
+\vspace{2mm}
+\includegraphics[width=4.0cm,height=2cm,keepaspectratio]{inakshi.png}
+\end{minipage}
+\\
+\hline
+\begin{minipage}[t][3.5cm][t]{\linewidth}
+\vspace{1.5mm}
+\textbf{Team member 3}\\[-1mm]
+\textit{(Name, Student ID, Email ):}
+\vspace{2.0cm}
+\end{minipage}
+&
+\begin{minipage}[t][3.25cm][t]{\linewidth}
+\vspace{1.5mm}
+\textit{Rincy - 2510010306}\\
+\textit{rincybadhawa.1998@gmail.com}
+
+\vspace{2mm}
+\includegraphics[width=4.0cm,height=2cm,keepaspectratio]{rincy.png}
+\end{minipage}
+\\
+\hline
+\begin{minipage}[t][3.5cm][t]{\linewidth}
+\vspace{1.5mm}
+\textbf{Team member 4}\\[-1mm]
+\textit{(Last Name, Name, Student ID, Email):}
+\vspace{2.0cm}
+\end{minipage}
+&
+\begin{minipage}[t][3.25cm][t]{\linewidth}
+\vspace{1.5mm}
+\textit{Jha, Saumya - 2510011508}\\
+\textit{saumya.jha251@gmail.com}
+
+\vspace{2mm}
+\includegraphics[width=4cm,height=2cm,keepaspectratio]{Saumya.png}
+\end{minipage}
+\\
+\hline
+\end{tabularx}
+
+\newpage
+
+
+\vspace{12mm}
+
+\bluebigheading{PROPOSAL DESCRIPTION}
+
+\vspace{12mm}
+
+\blueheading{Motivation }
+
+\vspace{1mm}
+
+\answerbox[5cm]{
+Examination related works are handled through seating-plan documents and common lists. The seating arrangement along with other room details are shared in from of lists, thus the students have to search for their roll number to find out their respective room and seat.
+
+For teachers, the examination duties are generally intimated through a common duty list. In case of any UFM (Unfair Means) case during an examination, the details are manually noted down on paper for further checking by the concerned authorities.
+
+Although the current system handles all these works, finding out individual information from common lists might take time and be tedious. The goal of our project is to make the process easier, more organized and personalized by providing the user with all the information that concerns him/her through a common portal.
+}
+
+\vspace{12mm}
+
+\blueheading{State of the Art / Current solution }
+
+\vspace{1mm}
+
+\answerbox[6.5cm]{
+Currently, the students need to refer to the common seating list to find their seating details.It can take a long time to get the required information including building, floor, classroom and seat numbers which could also be confusing.
+
+
+For the administrative personnel, the process commences by getting the student and room information and coming up with a tentative seating plan.
+
+
+
+Any changes to the student’s information, the room or its availability, or the exam schedules would necessitate taking up the entire process again.
+
+
+
+While the current system works well to provide the required seating information, it can be seen that as the number of students and rooms increases the process of allocating them becomes tedious and requires several checks and balances.
+
+
+
+This shows the need of having an intelligent seating allocation system that can handle the seating arrangements and their amendments in a much more systematic and automated manner while eliminating the human errors that are involved in the current systems.
+}
+
+\vspace{12mm}
+
+\blueheading{Project Goals and Milestones}
+
+\vspace{1mm}
+
+\answerbox[7cm]{
+\noindent Project Goals
+\begin{itemize}[leftmargin=2.5em,label=$\bullet$,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+\item To design an intelligent system for allocating seats which reduces the scope of error.
+\item Allow students to fetch the details of their allotted seat easily by inputting their university roll number.
+\item Display building, floor, room and seat information through the portal.
+\item Provide teacher specific invigilation duties.
+\item Manage UFM records digitally.
+\item Apply DSA concepts to seating allocation and data management.
+\end{itemize}
+
+\vspace{1mm}
+
+\noindent Milestones
+\begin{itemize}[leftmargin=2.5em,label=$\bullet$,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+\item Data collection, Database and detailed analysis of the collected data.
+\item Seating allocation algorithm.
+\item Creating separate modules for students and teachers.
+\item Admin module and UFM management.
+\item Integration and testing.
+\end{itemize}
+}
+
+\vspace{12mm}
+\newpage
+
+\blueheading{Project Approach}
+
+\vspace{1mm}
+
+\answerbox[15cm]{
+\noindent Requirement
+\begin{itemize}[leftmargin=2.5em,label=$\bullet$,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+\item data of students, rooms, available room and the available teachers.
+\end{itemize}
+
+\vspace{1mm}
+
+\noindent Implementation of OOPs
+\begin{itemize}[leftmargin=2.5em,label=$\bullet$,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+\item In C++ programming language.
+\item Classes for students, teachers, seating arrangement, examination and rooms.
+\item Encapsulation for data and functions, inheritance and polymorphism gives runtime flexibility.
+\item constructors initialize the objects.
+\end{itemize}
+
+\vspace{1mm}
+
+\noindent Data Management using DSA
+\begin{itemize}[leftmargin=2.5em,label=$\bullet$,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+\item Arrays for static records.
+\items pointers or linked lists for dynamic data.
+\item Hashing for needed information .
+\item Searching and sorting algorithms find and order records efficiently.
+\end{itemize}
+
+\vspace{1mm}
+
+\noindent Generating the Smart Seating Plan
+\begin{itemize}[leftmargin=2.5em,label=$\bullet$,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+\item The admin enters student, examination, room, and seat details.
+\item The system assigns seats according to DSA algorithms to prevent conflicts.
+\end{itemize}
+
+\vspace{1mm}
+
+\noindent Student Module
+\begin{itemize}[leftmargin=2.5em,label=$\bullet$,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+\item The students log in to view examination information.
+\item Searching and hashing retrieve examination and seating information.
+\item The portal provides an option to access or download the admit card.
+\end{itemize}
+
+\vspace{1mm}
+
+\noindent Teacher Module
+\begin{itemize}[leftmargin=2.5em,label=$\bullet$,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+\item The teachers log in to view their assigned duty (Invigilator / Flying Squad).
+\item Searching finds the duty assigned to a teacher.
+\item The authorized faculty records the UFM information.
+\end{itemize}
+
+\vspace{1mm}
+
+\noindent Admin Module
+\begin{itemize}[leftmargin=2.5em,label=$\bullet$,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+\item The admin manages student, teacher, examination, room, and seating records using DSA and hashing techniques.
+\item Searching and sorting find records; the admin generates seating arrangements.
+\end{itemize}
+}
+
+\vspace{12mm}
+
+\blueheading{System Architecture}
+
+\vspace{1mm}
+
+\answerbox[7.5cm]{
+
+\centering
+\includegraphics[width=12cm,height=9cm,keepaspectratio]{System Architecture.png}
+
+}
+
+\vspace{12mm}
+
+\newpage
+
+\vspace*{2mm}
+
+\blueheading{Project Outcome / Deliverables}
+
+\vspace{1mm}
+
+\answerbox[5.5cm]{
+1- A smart examination portal will make the examination process more efficient.
+
+2- Smart and effiecient seating allocation module which makes the allocation process easier and reduce errors.
+
+3- Information about the allocated seats of each student will be easily accessible and will prevent confusions.
+
+4- Admin dashboard.
+
+5- Teacher duty dashboard.
+
+6- Unfair Means cases, which are currently handled manually  will be managed through the portal.
+
+7- Seating plan generation.
+
+8- Data storage.
+
+9- Documentation and testing.
+
+}
+
+\vspace{12mm}
+
+\blueheading{Assumptions}
+
+\vspace{1mm}
+
+
+\answerbox[2.65cm]{
+Access: The administrators have access to all the student and teacher information.
+
+Schedules: Scheduling of exams is done prior to finalizing the seating plans
+
+Capacity: Seating capacity and room sizes are pre-set.
+
+Security: Restriction of editing exam information is given only to authorized users.
+
+UFM Records: Only authorized faculty or admins can report unfair means (cheating) cases.
+}
+
+\vspace{12mm}
+
+\blueheading{References}
+
+\vspace{1mm}
+
+
+\answerbox[5cm]{
+
+1- https://www.ijfmr.com/research-paper.php?id=74289&utm : Algorithm Based Seating Arrangement and Scheduling System 
+
+Authors: Ayeesha Begum S, Cinithya G, Meena V
+
+2- https://ijrti.org/papers/IJRTI2604022.pdf : Smart Examination Management and Administration Platform
+
+Authors: Mr. Asif A, Mr. Baranidharan C, Mr. Gowsick K, Prof. Dhana Lakshmi R.
+
+3- Herbert Schildt, C++: The Complete Reference, 4th Edition, McGraw Hill.
+
+4- E. Balagurusamy, Object-Oriented Programming with C++, 8th Edition.
+
+5- Ellis Horowitz and Sartaj Sahni, Fundamentals of Data Structures.
+
+6- Adam Drozdek, Data Structures and Algorithms in C++, 4th Edition.
+
+}
+
+\end{document}
