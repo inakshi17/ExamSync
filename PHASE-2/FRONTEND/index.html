@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ExamSync ERP - Smart Examination Coordination Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="loginScreen">
+  <div class="login-card">
+    <div class="login-head">
+      <div class="login-seal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+      <h1>ExamSync</h1>
+      <p>Graphic Era University</p>
+    </div>
+    <div class="login-body">
+      <div class="role-tabs" id="loginRoleTabs">
+        <button data-role="student" class="active">Student</button>
+        <button data-role="teacher">Faculty</button>
+        <button data-role="admin">Admin</button>
+      </div>
+      <div id="loginError"></div>
+      <div class="field"><label id="idLabel" for="loginId">Roll number</label><input id="loginId" placeholder="2510011488" autocomplete="username"></div>
+      <div class="field"><label for="loginPass">Password</label><input id="loginPass" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="current-password"></div>
+      <button class="btn-block" id="loginBtn">Sign in</button>
+    </div>
+  </div>
+</div>
+
+<div id="appShell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="mark">ES</div><div><p class="name">ExamSync</p></div></div>
+    <nav id="navList"></nav>
+    <div class="sidebar-foot">
+      <button class="navitem" onclick="logout()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign out</button>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="topbar-left">
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        <div class="crumbs"><span id="crumbLabel">Dashboard</span><strong id="pageHeading">Overview</strong></div>
+      </div>
+      <div class="who"><div class="info"><p class="n" id="whoName">-</p><p class="r" id="whoRole">-</p></div><div class="avatar" id="whoAvatar">-</div></div>
+    </div>
+    <div class="content" id="content"></div>
+  </div>
+</div>
+
+<div id="printArea" class="hidden"></div>
+
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/config.js"></script>
+<script src="js/router.js"></script>
+<script src="js/views/student.js"></script>
+<script src="js/views/teacher.js"></script>
+<script src="js/views/admin.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
