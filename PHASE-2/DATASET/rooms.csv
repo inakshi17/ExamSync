@@ -1,0 +1,68 @@
+Room_ID,Room_Name,Building,Floor,Room_Type,Row_Groups,Seat_Columns,Seats_Per_Column,Capacity
+BTECH-LT-14,B.Tech Block LT-14,B.Tech Block,1,LT,5,10,10,100
+BTECH-CR-15,B.Tech Block CR-15,B.Tech Block,1,CR,4,8,9,72
+BTECH-LT-15,B.Tech Block LT-15,B.Tech Block,2,LT,5,10,11,110
+BTECH-CR-16,B.Tech Block CR-16,B.Tech Block,2,CR,4,8,10,80
+BTECH-CR-17,B.Tech Block CR-17,B.Tech Block,3,CR,4,8,9,72
+BTECH-CR-18,B.Tech Block CR-18,B.Tech Block,3,CR,4,8,10,80
+CSIT-CR-01,CS/IT Block CR-01,CS/IT Block,1,CR,4,8,7,56
+CSIT-CR-02,CS/IT Block CR-02,CS/IT Block,1,CR,4,8,7,56
+CSIT-CR-03,CS/IT Block CR-03,CS/IT Block,1,CR,4,8,7,56
+CSIT-CR-04,CS/IT Block CR-04,CS/IT Block,1,CR,4,8,8,57
+CSIT-LT-01,CS/IT Block LT-01,CS/IT Block,1,LT,3,10,10,100
+CSIT-LT-02,CS/IT Block LT-02,CS/IT Block,1,LT,3,10,10,100
+CSIT-LT-03,CS/IT Block LT-03,CS/IT Block,1,LT,3,10,10,100
+CSIT-LT-04,CS/IT Block LT-04,CS/IT Block,1,LT,3,10,10,100
+CSIT-CR-05,CS/IT Block CR-05,CS/IT Block,2,CR,4,8,7,56
+CSIT-CR-06,CS/IT Block CR-06,CS/IT Block,2,CR,4,8,7,56
+CSIT-CR-07,CS/IT Block CR-07,CS/IT Block,2,CR,4,8,7,56
+CSIT-CR-08,CS/IT Block CR-08,CS/IT Block,2,CR,4,8,7,56
+CSIT-LT-05,CS/IT Block LT-05,CS/IT Block,2,LT,3,10,10,100
+CSIT-LT-06,CS/IT Block LT-06,CS/IT Block,2,LT,3,10,10,100
+CSIT-LT-07,CS/IT Block LT-07,CS/IT Block,2,LT,3,10,10,100
+CSIT-LT-08,CS/IT Block LT-08,CS/IT Block,2,LT,3,10,10,100
+CSIT-CR-09,CS/IT Block CR-09,CS/IT Block,3,CR,4,8,7,56
+CSIT-CR-10,CS/IT Block CR-10,CS/IT Block,3,CR,4,8,7,56
+CSIT-CR-11,CS/IT Block CR-11,CS/IT Block,3,CR,4,8,7,56
+CSIT-CR-12,CS/IT Block CR-12,CS/IT Block,3,CR,4,8,7,56
+CSIT-LT-09,CS/IT Block LT-09,CS/IT Block,3,LT,3,10,10,100
+CSIT-LT-10,CS/IT Block LT-10,CS/IT Block,3,LT,3,10,10,100
+CSIT-LT-11,CS/IT Block LT-11,CS/IT Block,3,LT,3,10,10,100
+CHANAKYA-TR-10,Chanakya Block TR-10,Chanakya Block,1,TR,5,10,7,70
+CHANAKYA-LT-19,Chanakya Block LT-19,Chanakya Block,2,LT,4,8,7,56
+CIVIL-TR-08,Civil Block TR-08,Civil Block,1,TR,4,8,8,64
+CIVIL-TR-09,Civil Block TR-09,Civil Block,1,TR,4,8,8,64
+CIVIL-CR-20,Civil Block CR-20,Civil Block,1,CR,5,10,10,100
+CIVIL-CR-21,Civil Block CR-21,Civil Block,2,CR,5,10,10,100
+CIVIL-CR-22,Civil Block CR-22,Civil Block,2,CR,4,8,8,64
+CIVIL-CR-23,Civil Block CR-23,Civil Block,2,CR,4,8,8,64
+CIVIL-CR-24,Civil Block CR-24,Civil Block,3,CR,5,10,10,100
+CIVIL-CR-25,Civil Block CR-25,Civil Block,3,CR,5,10,10,100
+GEU-CR-10,GEU Block CR-10,GEU Block,1,CR,4,8,7,50
+GEU-CR-26,GEU Block CR-26,GEU Block,1,CR,5,10,11,110
+GEU-CR-27,GEU Block CR-27,GEU Block,1,CR,6,12,8,96
+GEU-CR-28,GEU Block CR-28,GEU Block,2,CR,5,10,10,100
+GEU-CR-29,GEU Block CR-29,GEU Block,2,CR,4,8,10,80
+GEU-CR-30,GEU Block CR-30,GEU Block,2,CR,5,10,11,110
+GEU-CR-31,GEU Block CR-31,GEU Block,3,CR,4,8,8,64
+GEU-CR-43,GEU Block CR-43,GEU Block,3,CR,5,10,10,100
+KPN-TR-13,K.P. Nautiyal Block TR-13,K.P. Nautiyal Block,1,TR,4,8,8,54
+KPN-LT-22,K.P. Nautiyal Block LT-22,K.P. Nautiyal Block,1,LT,4,8,7,56
+KPN-LT-23,K.P. Nautiyal Block LT-23,K.P. Nautiyal Block,1,LT,4,8,7,56
+KPN-LT-24,K.P. Nautiyal Block LT-24,K.P. Nautiyal Block,2,LT,4,8,6,48
+KPN-LT-25,K.P. Nautiyal Block LT-25,K.P. Nautiyal Block,2,LT,4,8,7,56
+KPN-LT-26,K.P. Nautiyal Block LT-26,K.P. Nautiyal Block,2,LT,4,8,7,56
+KPN-CR-39,K.P. Nautiyal Block CR-39,K.P. Nautiyal Block,3,CR,4,8,7,56
+KPN-CR-40,K.P. Nautiyal Block CR-40,K.P. Nautiyal Block,3,CR,4,8,8,60
+MECH-CR-41,Mechanical Block CR-41,Mechanical Block,1,CR,4,8,7,56
+OLDMCA-CR-32,Old MCA Block CR-32,Old MCA Block,1,CR,4,8,8,60
+OLDMCA-CR-33,Old MCA Block CR-33,Old MCA Block,1,CR,5,10,5,46
+OLDMCA-CR-34,Old MCA Block CR-34,Old MCA Block,1,CR,5,10,5,50
+OLDMCA-CR-35,Old MCA Block CR-35,Old MCA Block,1,CR,4,8,8,64
+OLDMCA-CR-36,Old MCA Block CR-36,Old MCA Block,2,CR,6,12,6,72
+OLDMCA-CR-37,Old MCA Block CR-37,Old MCA Block,2,CR,3,6,8,48
+OLDMCA-CR-38,Old MCA Block CR-38,Old MCA Block,2,CR,4,8,8,64
+OLDMCA-CR-44,Old MCA Block CR-44,Old MCA Block,2,CR,4,8,8,64
+OLDMCA-CR-45,Old MCA Block CR-45,Old MCA Block,3,CR,5,10,6,60
+OLDMCA-CR-46,Old MCA Block CR-46,Old MCA Block,3,CR,4,8,8,60
+OLDMCA-CR-47,Old MCA Block CR-47,Old MCA Block,3,CR,5,10,6,52
