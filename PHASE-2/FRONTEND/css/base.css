@@ -32,3 +32,34 @@
   padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
+
+/* USE OF DARK COLORS WHEN SYSTEM IS SET TO DARK MODE */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1117; 
+    --surface: #121a22; 
+    --surface-2: #0e151c;
+    --border: #253140; 
+    --text: #dde5ec; 
+    --text-soft: #9fb0bf; 
+    --text-faint: #6d8091;
+    --blue-soft: #10202c; 
+    --success-soft: #0f2419; 
+    --warn-soft: #2a1e0c; 
+    --danger-soft: #2b1414;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b1117; 
+  --surface: #121a22; 
+  --surface-2: #0e151c;
+  --border: #253140; 
+  --text: #dde5ec; 
+  --text-soft: #9fb0bf; 
+  --text-faint: #6d8091;
+  --blue-soft: #10202c; 
+  --success-soft: #0f2419; 
+  --warn-soft: #2a1e0c; 
+  --danger-soft: #2b1414;
+}
