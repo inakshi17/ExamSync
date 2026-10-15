@@ -63,3 +63,34 @@
   --warn-soft: #2a1e0c; 
   --danger-soft: #2b1414;
 }
+* { 
+  box-sizing: border-box; 
+  }
+html, body { 
+  height: 100%; 
+}
+html { 
+  scroll-padding-top: env(safe-area-inset-top, 0px); 
+}
+body { 
+  margin: 0; 
+  background: var(--bg); 
+  color: var(--text); 
+  font-family: var(--sans); 
+  font-size: 14px; 
+  -webkit-font-smoothing: antialiased; 
+}
+button { 
+  font-family: var(--sans); 
+  cursor: pointer; 
+}
+input, select { 
+  font-family: var(--sans); 
+}
+table { 
+  border-collapse: collapse; 
+  width: 100%; 
+}
+.hidden { 
+  display: none !important; 
+}
