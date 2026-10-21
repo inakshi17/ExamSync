@@ -1,0 +1,34 @@
+uid,roll,subCode,room,facId,timestamp,itype,details,status
+UFM1001,2026001328,TBT513,B.Tech Block CR-16,2586852051,2025-12-14 10:44:00,Mobile Phone,Unauthorised use of a mobile phone detected during the exam.,PENDING
+UFM1002,2026001347,MAS413,CS/IT Block LT-02,2586851974,2025-12-16 09:31:00,Chits,Caught with paper chits containing exam notes and formulas.,UNDER_REVIEW
+UFM1003,2026001120,BAR512,B.Tech Block CR-16,2586851959,2025-12-13 15:11:00,Talking,Repeatedly attempting to communicate and exchange answers with neighboring student.,UNDER_REVIEW
+UFM1004,2026001230,BGL107,Civil Block CR-22,2586852086,2025-12-23 10:18:00,Mobile Phone,Unauthorised use of a mobile phone detected during the exam.,DISMISSED
+UFM1005,2026001175,BCA711,CS/IT Block LT-06,2586851782,2025-12-22 11:36:00,Chits,Caught with paper chits containing exam notes and formulas.,DISMISSED
+UFM1006,2026001050,TEC114,GEU Block CR-30,2586851981,2025-12-14 10:16:00,Talking,Repeatedly attempting to communicate and exchange answers with neighboring student.,PENDING
+UFM1007,2026001499,BND704,CS/IT Block LT-01,2586851954,2025-12-14 15:09:00,Impersonation,Candidate found attempting to write the exam for another student.,UNDER_REVIEW
+UFM1008,2026001361,BAG403,B.Tech Block CR-18,2586852010,2025-12-13 11:35:00,Mobile Phone,Unauthorised use of a mobile phone detected during the exam.,PENDING
+UFM1009,2026001195,BCA713,Old MCA Block CR-34,2586851997,2025-12-23 11:40:00,Impersonation,Candidate found attempting to write the exam for another student.,PENALIZED
+UFM1010,2026001108,MFS113,Civil Block CR-21,2586852031,2025-12-24 15:11:00,Chits,Caught with paper chits containing exam notes and formulas.,UNDER_REVIEW
+UFM1011,2026001274,MAP404,Civil Block TR-08,2586851755,2025-12-17 12:47:00,Mobile Phone,Unauthorised use of a mobile phone detected during the exam.,PENALIZED
+UFM1012,2026001432,MDS101,CS/IT Block CR-02,2586851789,2025-12-23 10:21:00,Impersonation,Candidate found attempting to write the exam for another student.,DISMISSED
+UFM1013,2026001138,TAE808,CS/IT Block LT-10,2586852139,2025-12-19 14:50:00,Mobile Phone,Unauthorised use of a mobile phone detected during the exam.,DISMISSED
+UFM1014,2026001203,BSD315,Old MCA Block CR-34,2586851745,2025-12-14 10:45:00,Impersonation,Candidate found attempting to write the exam for another student.,DISMISSED
+UFM1015,2026001460,BET103,K.P. Nautiyal Block LT-25,2586851857,2025-12-13 11:02:00,Talking,Repeatedly attempting to communicate and exchange answers with neighboring student.,PENDING
+UFM1016,2026001387,TCS403,CS/IT Block CR-05,2586851750,2025-12-20 11:20:00,Talking,Repeatedly attempting to communicate and exchange answers with neighboring student.,PENDING
+UFM1017,2026001198,BFT210,Old MCA Block CR-35,2586851942,2025-12-14 14:25:00,Chits,Caught with paper chits containing exam notes and formulas.,PENDING
+UFM1018,2026001350,TME805,Civil Block CR-21,2586852065,2025-12-20 11:37:00,Impersonation,Candidate found attempting to write the exam for another student.,DISMISSED
+UFM1019,2026001081,BPY306,B.Tech Block LT-14,2586852160,2025-12-21 14:46:00,Mobile Phone,Unauthorised use of a mobile phone detected during the exam.,PENDING
+UFM1020,2026001446,BDS812,Civil Block CR-25,2586852102,2025-12-20 14:08:00,Mobile Phone,Unauthorised use of a mobile phone detected during the exam.,UNDER_REVIEW
+UFM1021,2026001192,MMB210,CS/IT Block LT-07,2586851948,2025-12-22 14:28:00,Chits,Caught with paper chits containing exam notes and formulas.,PENALIZED
+UFM1022,2026001251,TCS605,CS/IT Block CR-05,2586852147,2025-12-15 11:45:00,Chits,Caught with paper chits containing exam notes and formulas.,UNDER_REVIEW
+UFM1023,2026001450,BML308,CS/IT Block LT-01,2586851715,2025-12-21 13:22:00,Chits,Caught with paper chits containing exam notes and formulas.,UNDER_REVIEW
+UFM1024,2026001066,MBI207,Old MCA Block CR-36,2586852156,2025-12-18 10:46:00,Talking,Repeatedly attempting to communicate and exchange answers with neighboring student.,UNDER_REVIEW
+UFM1025,2026001476,TME213,CS/IT Block CR-12,2586852037,2025-12-14 13:12:00,Impersonation,Candidate found attempting to write the exam for another student.,DISMISSED
+UFM1026,2026001461,LAW302,Old MCA Block CR-33,2586851733,2025-12-13 10:34:00,Impersonation,Candidate found attempting to write the exam for another student.,PENDING
+UFM1027,2026001302,BNS213,Chanakya Block TR-10,2586851973,2025-12-13 09:34:00,Chits,Caught with paper chits containing exam notes and formulas.,UNDER_REVIEW
+UFM1028,2026001035,TCS301,GEU Block CR-28,2586851708,2025-12-18 10:47:00,Talking,Repeatedly attempting to communicate and exchange answers with neighboring student.,UNDER_REVIEW
+UFM1029,2026001277,BCM411,Old MCA Block CR-36,2586851796,2025-12-22 13:21:00,Talking,Repeatedly attempting to communicate and exchange answers with neighboring student.,UNDER_REVIEW
+UFM1030,2026001049,BFS602,Mechanical Block CR-41,2586851853,2025-12-16 12:59:00,Chits,Caught with paper chits containing exam notes and formulas.,PENDING
+UFM1031,2026001441,TCS111,BTECH-LT-14,2586851672,2026-10-16 00:06:25,Chits,Caught with paper chits containing exam notes and formulas.,PENDING
+UFM1032,2026001175,BCA711,CS/IT,2586851874,2026-10-16 00:09:31,Block LT-02,alking,PENDING
+UFM1033,23212133,3,54,2586851677,2026-10-16 09:48:22,5,65,PENDING
