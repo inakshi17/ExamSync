@@ -1,0 +1,21 @@
+uid,roll,subCode,room,facId,timestamp,itype,details,status
+UFM1001,2026021009,BEC101,B.Tech Block LT-14,2586851672,2026-11-24 10:30:00,Mobile Phone Found,Student found using mobile phone during exam. Phone confiscated.,PENDING
+UFM1002,2026021012,BEN101,B.Tech Block CR-15,2586851673,2026-11-26 10:30:00,Chit Found,Hand-written chit found inside answer sheet.,PENDING
+UFM1003,2026021015,BPS101,B.Tech Block LT-15,2586851674,2026-11-28 10:30:00,Copying from Neighbour,Student caught looking at neighbour's answer sheet repeatedly.,PENDING
+UFM1004,2026001776,BPY101,B.Tech Block CR-16,2586851675,2026-11-30 10:30:00,Misbehaviour with Invigilator,Student refused to submit answer sheet on time.,UNDER_REVIEW
+UFM1005,2026001883,BSO101,B.Tech Block CR-17,2586851676,2026-12-02 10:30:00,Unauthorized Material,Printed notes found inside calculator cover.,PENALIZED
+UFM1006,2026001886,LAW101,B.Tech Block CR-18,2586851677,2026-12-04 10:30:00,Using Smartwatch,Smartwatch with formula stored found on wrist.,DISMISSED
+UFM1007,2026001889,BCE101,CS/IT Block CR-01,2586851678,2026-12-06 10:30:00,Writing after bell,Student continued writing 5 minutes after end bell.,PENDING
+UFM1008,2026001892,BCM101,CS/IT Block CR-02,2586851679,2026-12-08 10:30:00,Impersonation Attempt,Student ID did not match university records. Exam cancelled.,UNDER_REVIEW
+UFM1009,2026001895,BDS101,CS/IT Block CR-03,2586851680,2026-12-10 10:30:00,Mobile Phone Found,Student found using mobile phone during exam. Phone confiscated.,PENDING
+UFM1010,2026001898,BBT101,CS/IT Block CR-04,2586851681,2026-11-24 10:30:00,Chit Found,Hand-written chit found inside answer sheet.,PENDING
+UFM1011,2026001901,BFT101,CS/IT Block LT-01,2586851682,2026-11-26 10:30:00,Copying from Neighbour,Student caught looking at neighbour's answer sheet repeatedly.,PENDING
+UFM1012,2026001904,BGL101,CS/IT Block LT-02,2586851683,2026-11-28 10:30:00,Misbehaviour with Invigilator,Student refused to submit answer sheet on time.,UNDER_REVIEW
+UFM1013,2026001907,BND101,CS/IT Block LT-03,2586851684,2026-11-30 10:30:00,Unauthorized Material,Printed notes found inside calculator cover.,PENALIZED
+UFM1014,2026001910,BFS101,CS/IT Block LT-04,2586851685,2026-12-02 10:30:00,Using Smartwatch,Smartwatch with formula stored found on wrist.,DISMISSED
+UFM1015,2026001913,BET101,CS/IT Block CR-05,2586851686,2026-12-04 10:30:00,Writing after bell,Student continued writing 5 minutes after end bell.,PENDING
+UFM1016,2026001916,BNS101,CS/IT Block CR-06,2586851687,2026-12-06 10:30:00,Impersonation Attempt,Student ID did not match university records. Exam cancelled.,UNDER_REVIEW
+UFM1017,2026001919,BAG101,CS/IT Block CR-07,2586851688,2026-12-08 10:30:00,Mobile Phone Found,Student found using mobile phone during exam. Phone confiscated.,PENDING
+UFM1018,2026001922,BCP101,CS/IT Block CR-08,2586851689,2026-12-10 10:30:00,Chit Found,Hand-written chit found inside answer sheet.,PENDING
+UFM1019,2026001925,BCS101,CS/IT Block LT-05,2586851690,2026-11-24 10:30:00,Copying from Neighbour,Student caught looking at neighbour's answer sheet repeatedly.,PENDING
+UFM1020,2026001928,BIT101,CS/IT Block LT-06,2586851691,2026-11-26 10:30:00,Misbehaviour with Invigilator,Student refused to submit answer sheet on time.,DISMISSED
