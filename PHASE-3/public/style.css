@@ -58,3 +58,32 @@ th, td {
 th { 
     background: #e8edf3; 
 }
+td.seat { 
+    cursor: pointer; 
+    text-align: center; 
+    min-width: 52px; 
+    font-size: 12px; 
+}
+.box { 
+    max-width: 320px; 
+    margin: 80px auto; 
+    background: #fff; 
+    padding: 25px; 
+    border-radius: 6px; 
+}
+.box input { 
+    width: 92%; 
+    display: block; 
+    margin: 8px 0; 
+}
+.msg { 
+    color: #b3261e; 
+} 
+.ok { 
+    color: #1a7f37; 
+}
+.scroll { 
+    overflow: auto; 
+    max-height: 450px; 
+}
+
