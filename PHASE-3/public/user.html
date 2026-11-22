@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>ExamSync</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h2 id="title">ExamSync</h2><button onclick="logout()">Logout</button></header>
+<main>
+  <section id="student"><h3>My Seat</h3><div id="seatOut"></div></section>
+  <section id="faculty">
+    <h3>My Invigilation Duties</h3><div id="dutyOut"></div>
+    <h3>Report Unfair Means (UFM)</h3>
+    <input id="roll" placeholder="Student roll"> <input id="subj" placeholder="Subject code"> <input id="room" placeholder="Room">
+    <select id="itype"><option>Copying</option><option>Mobile Phone</option><option>Impersonation</option><option>Other</option></select>
+    <input id="details" placeholder="Details" size="30"> <button id="add">Submit</button>
+    <p id="msg"></p><div id="ufmOut"></div>
+  </section>
+</main>
+<script src="common.js"></script>
+<script src="user.js"></script>
+</body>
+</html>
 
