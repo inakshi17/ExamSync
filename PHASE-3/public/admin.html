@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>ExamSync Admin</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header>
+  <h2>ExamSync - Admin Portal</h2>
+  Semester:
+  <select id="type"><option value="odd">Odd (1,3,5,7)</option><option value="even">Even (2,4,6,8)</option></select>
+  <button onclick="logout()">Logout</button>
+</header>
+<main>
+  <nav>
+    <button data-tab="allocate">Allocate</button>
+    <button data-tab="seating">Seating by Date</button>
+    <button data-tab="room">Room View</button>
+    <button data-tab="student">Student Search</button>
+    <button data-tab="duty">Duty</button>
+    <button data-tab="ufm">UFM</button>
+    <button data-tab="upload">Upload Files</button>
+  </nav>
+
+  <section id="allocate">
+    <h3>Seat Allocation</h3>
+    Exam date: <select id="allocDate"></select>
+    <button id="runBtn">Run Allocation</button>
+    <button id="resetBtn" class="red">Restart (clear all seating)</button>
+    <p id="allocMsg"></p><div id="allocOut"></div>
+  </section>
+
+  <section id="seating">
+    <h3>Rooms on a Date</h3>
+    Date: <select id="viewDate"></select> <button id="viewBtn">Show</button>
+    <div id="seatOut"></div>
+  </section>
+
+  <section id="room">
+    <h3>Open a Room</h3>
+    <input id="roomQ" placeholder="Room name, e.g. LT-14"> <select id="roomDate"></select>
+    <button id="roomBtn">Search</button>
+    <p id="info"></p><div id="roomOut"></div>
+  </section>
+
+  <section id="student">
+    <h3>Search Student by Roll No</h3>
+    <input id="roll" placeholder="Roll no"> <button id="stuBtn">Search</button>
+    <div id="stuOut"></div>
+  </section>
+
+  <section id="duty">
+    <h3>Faculty Duty (Min-Heap Scheduler)</h3>
+    <button id="dutyBtn">Run Duty Scheduling</button>
+    Date: <select id="dutyDate"></select> Faculty ID: <input id="fid" size="12"> <button id="dutyView">View</button>
+    <p id="dutyMsg"></p><div id="dutyOut"></div>
+  </section>
+
+  <section id="ufm">
+    <h3>UFM Reports</h3>
+    <button id="ufmAll">All</button> <button id="ufmPend">Pending only</button>
+    <p>Update: ID <input id="uid" size="9"> <select id="ustatus"><option>UNDER_REVIEW</option><option>PENALIZED</option><option>DISMISSED</option><option>PENDING</option></select>
+    <button id="ufmSet">Update</button></p>
+    <div id="ufmOut"></div>
+  </section>
+
+  <section id="upload">
+    <h3>Upload New CSV Files</h3>
+    <p>Upload new data (e.g. an even-semester student list), then Restart and Run Allocation.</p>
+    <p>Students: <input type="file" id="f_students" accept=".csv"> <button data-k="students">Upload</button></p>
+    <p>Exam schedule: <input type="file" id="f_exams" accept=".csv"> <button data-k="exams">Upload</button></p>
+    <p>Rooms: <input type="file" id="f_rooms" accept=".csv"> <button data-k="rooms">Upload</button></p>
+    <p id="upMsg"></p>
+  </section>
+</main>
+<script src="common.js"></script>
+<script src="admin-seat.js"></script>
+<script src="admin-more.js"></script>
+</body>
+</html>
 
