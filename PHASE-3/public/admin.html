@@ -4,8 +4,7 @@
 <body>
 <header>
   <h2>ExamSync - Admin Portal</h2>
-  Semester:
-  <select id="type"><option value="odd">Odd (1,3,5,7)</option><option value="even">Even (2,4,6,8)</option></select>
+  Odd Semester (1, 3, 5, 7)
   <button onclick="logout()">Logout</button>
 </header>
 <main>
@@ -21,21 +20,21 @@
 
   <section id="allocate">
     <h3>Seat Allocation</h3>
-    Exam date: <select id="allocDate"></select>
-    <button id="runBtn">Run Allocation</button>
+    <p>One click seats every student for all exam dates. Morning = Sem 1 &amp; 7, Afternoon = Sem 3 &amp; 5.</p>
+    <button id="runBtn">Run Allocation (all dates)</button>
     <button id="resetBtn" class="red">Restart (clear all seating)</button>
     <p id="allocMsg"></p><div id="allocOut"></div>
   </section>
 
   <section id="seating">
     <h3>Rooms on a Date</h3>
-    Date: <select id="viewDate"></select> <button id="viewBtn">Show</button>
+    Date: <select id="viewDate"></select> <select id="viewShift"><option>Morning</option><option>Afternoon</option></select> <button id="viewBtn">Show</button>
     <div id="seatOut"></div>
   </section>
 
   <section id="room">
     <h3>Open a Room</h3>
-    <input id="roomQ" placeholder="Room name, e.g. LT-14"> <select id="roomDate"></select>
+    <input id="roomQ" placeholder="Room name, e.g. LT-14"> <select id="roomDate"></select> <select id="roomShift"><option>Morning</option><option>Afternoon</option></select>
     <button id="roomBtn">Search</button>
     <p id="info"></p><div id="roomOut"></div>
   </section>
@@ -63,7 +62,7 @@
 
   <section id="upload">
     <h3>Upload New CSV Files</h3>
-    <p>Upload new data (e.g. an even-semester student list), then Restart and Run Allocation.</p>
+    <p>Upload new odd-semester data, then Restart and Run Allocation.</p>
     <p>Students: <input type="file" id="f_students" accept=".csv"> <button data-k="students">Upload</button></p>
     <p>Exam schedule: <input type="file" id="f_exams" accept=".csv"> <button data-k="exams">Upload</button></p>
     <p>Rooms: <input type="file" id="f_rooms" accept=".csv"> <button data-k="rooms">Upload</button></p>
@@ -75,4 +74,3 @@
 <script src="admin-more.js"></script>
 </body>
 </html>
-
