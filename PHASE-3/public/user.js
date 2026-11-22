@@ -7,8 +7,8 @@ async function student() {
   $('student').classList.add('on');
   const r = await api('/api/my/seat');
   $('seatOut').innerHTML = (r.found ? `<p><b>${esc(r.name)}</b> | ${esc(r.course)} ${esc(r.branch)} | Sem ${r.sem}</p>` : '') +
-    (r.seats && r.seats.length ? table(r.seats, [['Date', 'date'], ['Building', 'building'], ['Floor', 'floor'], ['Room', 'room'], ['Row', 'row'], ['Col', 'col']])
-      : '<p>Seating not allotted yet.</p>');
+    (r.seats && r.seats.length ? table(r.seats, [['Date', 'date'], ['Shift', 'shift'], ['Building', 'building'], ['Floor', 'floor'], ['Room', 'room'], ['Row', 'row'], ['Col', 'col']])
+      : '<p>No seat found. Either allocation has not been run yet, or your branch has no exam in the schedule.</p>');
 }
 
 async function faculty() {
@@ -23,4 +23,3 @@ $('add').onclick = async () => {
 };
 
 if (role === 'STUDENT') student(); else faculty();
-
