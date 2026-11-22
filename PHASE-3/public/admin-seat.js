@@ -1,25 +1,24 @@
 // Admin: dates, seat allocation, rooms-by-date and room grid view
 guard('ADMIN');
 tabs(['allocate', 'seating', 'room', 'student', 'duty', 'ufm', 'upload']);
-const T = () => $('type').value;                       // odd / even
 const color = c => `hsl(${[...c].reduce((a, ch) => a * 31 + ch.charCodeAt(0), 7) % 360},70%,85%)`;
-const dateCols = [['Date', 'date'], ['Students', 'students'], ['Seated', 'seated'], ['Unseated', 'unseated']];
+const slotCols = [['Date', 'date'], ['Shift', 'shift'], ['Students', 'students'], ['Seated', 'seated'], ['Unseated', 'unseated']];
+let slots = [];
 
 async function loadDates() {
-  const d = await api('/api/admin/dates?type=' + T());
-  d.forEach(x => x.unseated = x.students - x.seated);
-  const names = d.map(x => x.date);
-  fill('allocDate', names, 'ALL'); fill('viewDate', names); fill('roomDate', names); fill('dutyDate', names, '-');
-  $('allocOut').innerHTML = table(d, dateCols);
+  slots = await api('/api/admin/dates');
+  slots.forEach(x => x.unseated = x.students - x.seated);
+  const days = [...new Set(slots.map(x => x.date))];
+  fill('viewDate', days); fill('roomDate', days); fill('dutyDate', days, '-');
+  $('allocOut').innerHTML = table(slots, slotCols);
 }
-$('type').onchange = loadDates;
 
 $('runBtn').onclick = async () => {
+  if (slots.some(x => x.seated > 0) && !confirm('Seating already exists. Clear it and allocate again?')) return;
   $('allocMsg').textContent = 'Running allocation...';
-  const r = await api('/api/admin/run', { type: T(), date: $('allocDate').value });
-  r.forEach(x => x.unseated = x.students - x.seated);
+  await api('/api/admin/run', {});
+  await loadDates();
   $('allocMsg').innerHTML = '<span class="ok">Done. Saved to data/seating_plan.csv</span>';
-  $('allocOut').innerHTML = table(r, dateCols);
 };
 $('resetBtn').onclick = async () => {
   if (!confirm('Delete the whole seating plan?')) return;
@@ -30,20 +29,20 @@ $('resetBtn').onclick = async () => {
 
 // rooms used on a chosen date, click a row to open that room
 $('viewBtn').onclick = async () => {
-  const r = await api('/api/admin/rooms?date=' + $('viewDate').value);
+  const r = await api(`/api/admin/rooms?date=${$('viewDate').value}&shift=${$('viewShift').value}`);
   $('seatOut').innerHTML = '<div class="scroll"><table><tr><th>Room</th><th>Building</th><th>Floor</th><th>Used / Capacity</th><th></th></tr>' +
     r.map(x => `<tr><td>${esc(x.room)}</td><td>${esc(x.building)}</td><td>${esc(x.floor)}</td><td>${x.used} / ${x.cap}</td>
       <td><button data-room="${esc(x.room)}">Open</button></td></tr>`).join('') + '</table></div>';
 };
 $('seatOut').onclick = e => {
   if (!e.target.dataset.room) return;
-  $('roomQ').value = e.target.dataset.room; $('roomDate').value = $('viewDate').value;
+  $('roomQ').value = e.target.dataset.room; $('roomDate').value = $('viewDate').value; $('roomShift').value = $('viewShift').value;
   document.querySelector('[data-tab=room]').click(); showRoom();
 };
 
 // room grid: one coloured cell per desk, click a desk to see the student
 async function showRoom() {
-  const rooms = await api(`/api/admin/room?q=${encodeURIComponent($('roomQ').value)}&date=${$('roomDate').value}`);
+  const rooms = await api(`/api/admin/room?q=${encodeURIComponent($('roomQ').value)}&date=${$('roomDate').value}&shift=${$('roomShift').value}`);
   $('info').textContent = ''; $('roomOut').innerHTML = rooms.length ? '' : '<p>No room found.</p>';
   rooms.forEach(r => {
     const g = {}; r.seats.forEach(s => g[s.row + ',' + s.col] = s);
@@ -63,4 +62,3 @@ async function showRoom() {
 $('roomBtn').onclick = showRoom;
 $('roomOut').onclick = e => { if (e.target.dataset.i) $('info').textContent = e.target.dataset.i; };
 loadDates();
-
