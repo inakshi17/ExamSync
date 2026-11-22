@@ -28,3 +28,33 @@ button, select, input {
     border: 1px solid #aaa; 
     border-radius: 4px; 
 }
+button { 
+    background: #1f3a5f; 
+    color: #fff; 
+    cursor: pointer; 
+}
+button.red { 
+    background: #b3261e; 
+}
+section { 
+    display: none; 
+    background: #fff; 
+    padding: 15px; 
+    border-radius: 6px; 
+}
+section.on { 
+    display: block; 
+}
+table { 
+    border-collapse: collapse; 
+    margin: 8px 0; 
+    font-size: 14px; 
+}
+th, td { 
+    border: 1px solid #ccc; 
+    padding: 4px 8px; 
+    text-align: left; 
+}
+th { 
+    background: #e8edf3; 
+}
