@@ -61,7 +61,6 @@ File Handling
 ### DSA in C
 
 - Arrays
-- Linked Lists
 - Min-Heap / Priority Queue
 - Hashing
 - Searching
@@ -73,7 +72,6 @@ File Handling
 - Encapsulation
 - Inheritance & Polymorphism
 - Constructors & Destructors
-- Operator Overloading
 - Exception Handling
 - File Handling
 
@@ -94,5 +92,5 @@ File Handling
 - Inakshi Bahukhandi
 - Rincy
 
-## Expected Outcome
+## Outcome
 ExamSync aims to make the process of examination management faster, organized and free from errors by providing automated seating arrangement and centralized examination information management.
