@@ -1,0 +1,38 @@
+## Backend, Database & UFM Module
+
+### Overview
+This part of ExamSync covers the data layer and the digital Unfair Means (UFM) system. It loads the university CSV data, keeps it in sync with MongoDB, and provides paperless UFM logging with an admin review workflow.
+
+### What I built
+
+**1. CSV import and MongoDB sync**
+- Loads the student, room, faculty, exam schedule and UFM data from CSV files.
+- Syncs the in-memory C++ structures with MongoDB, so the portals read stored data.
+- The CSV files are loaded once at startup, and database writes are batched. This fixed slow syncing on the full dataset (20,045 students, 67 rooms, 500 faculty).
+
+**2. Digital UFM logger**
+- Faculty can file a UFM report with the student roll number, subject code, room, faculty ID, incident type, details, timestamp and status.
+- Every new report starts as `PENDING`.
+- Records are stored in MongoDB and in `ufm_records.csv`.
+- A hash index (ID to record position) gives fast status updates.
+
+**3. Admin review workflow**
+- Admins can view all UFM records, list pending cases and update a case status.
+- The statuses are `PENDING`, `UNDER_REVIEW`, `PENALIZED` and `DISMISSED`.
+- Students can view the UFM records filed against them.
+
+**4. Integration and documentation**
+- Connected the backend with the seating, duty and portal modules.
+- Wrote the project documentation (report and slides).
+
+### Data flow
+```
+CSV files → C++ loader → in-memory structures → MongoDB → role-based portals
+```
+
+### Testing
+- **Integration test:** UFM entries update live in MongoDB with the faculty ID and status (passed).
+- Data loading was checked on the full dataset.
+
+### Tech used
+C++ (OOP, STL), MongoDB, CSV files, Git/GitHub
